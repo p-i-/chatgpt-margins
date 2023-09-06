@@ -1,0 +1,18 @@
+{
+    "name": "ChatGPT-fixMargins",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [
+        "*://chat.openai.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://chat.openai.com/*"
+            ],
+            "css": [
+                "fix-margins.css"
+            ]
+        }
+    ]
+}

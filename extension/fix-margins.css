@@ -1,0 +1,5 @@
+.p-4 > .gap-4, form {
+    box-sizing: content-box !important;
+    max-width: calc(100% - 30px) !important;
+    padding-right: 30px !important;
+}
