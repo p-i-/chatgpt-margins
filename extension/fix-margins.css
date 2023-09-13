@@ -3,3 +3,7 @@
     max-width: calc(100% - 30px) !important;
     padding-right: 30px !important;
 }
+
+#prompt-textarea {
+    font-family: 'Courier New', monospace !important;
+}
