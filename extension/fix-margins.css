@@ -1,9 +1,11 @@
+/* Remove stupid padding */
 .p-4 > .gap-4, form {
     box-sizing: content-box !important;
     max-width: calc(100% - 30px) !important;
     padding-right: 30px !important;
 }
 
-#prompt-textarea {
+/* Use monospace font for human text input-box and prior human-text rows */
+#prompt-textarea, div.empty\:hidden {
     font-family: 'Courier New', monospace !important;
 }
