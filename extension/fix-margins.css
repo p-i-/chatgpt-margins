@@ -1,18 +1,14 @@
-/* Remove stupid padding */
-/* .p-4 > .gap-4, form { */
-[data-testid] div, form {
-    box-sizing: content-box !important;
-    /* max-width: calc(100% - 30px) !important; */
-    /* padding-right: 30px !important; */
-
+/* Size the conversatin and input area */
+[class*="xl:max-w-["] {
     max-width: none !important;
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-    overflow-x: hidden !important;
 }
 
 /* Use monospace font for human text input-box and prior human-text rows */
-#prompt-textarea,
-div[data-message-author-role="user"] {
+[class*="xl:max-w-["] textarea {
+    font-family: 'Courier New', monospace !important;
+    max-width: none !important;
+}
+
+[data-message-author-role="user"] {
     font-family: 'Courier New', monospace !important;
 }
