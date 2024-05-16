@@ -3,12 +3,25 @@
     max-width: none !important;
 }
 
+/* Make use messages less ugly */
+[data-message-author-role="user"] {
+    font-family: 'Courier New', monospace !important;
+}
+
+[data-message-author-role="user"] > div   {
+    max-width: calc(100% - 3rem) !important;
+}
+
+[data-message-author-role="user"] > div > div  {
+    border-radius: 0px !important;
+    flex-grow: 1 !important;
+    max-width: none !important;
+    min-width: 100% !important;
+}
+
 /* Use monospace font for human text input-box and prior human-text rows */
 [class*="xl:max-w-["] textarea {
     font-family: 'Courier New', monospace !important;
     max-width: none !important;
 }
 
-[data-message-author-role="user"] {
-    font-family: 'Courier New', monospace !important;
-}
